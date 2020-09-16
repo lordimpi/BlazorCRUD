@@ -30,7 +30,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\snt-2\\Desktop\\S2\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+                "projectPath": "C:\\Users\\snt-2\\Desktop\\S2\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -47,6 +51,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
