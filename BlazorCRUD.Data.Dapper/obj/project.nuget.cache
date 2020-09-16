@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kVareMKeEKkLR0slrKPQkhXxiWMYqcZvUEiw7xrcMQvKyIl70ECsdWH3x6sGoMh0oi0j3VFN44+baSPRATVyPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\snt-2\\Desktop\\S2\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\snt-2\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\snt-2\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

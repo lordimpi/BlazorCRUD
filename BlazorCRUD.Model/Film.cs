@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BlazorCRUD.Model
+{
+    public class Film
+    {
+        public int Id { get; set; }
+
+        public string Director { get; set; }
+
+        public DateTime ReleaseDate { get; set; }
+    }
+}
