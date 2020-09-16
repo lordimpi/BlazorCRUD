@@ -1,0 +1,9 @@
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\bin\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.deps.json
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\bin\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.dll
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\bin\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.pdb
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\obj\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.csprojAssemblyReference.cache
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\obj\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.AssemblyInfoInputs.cache
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\obj\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.AssemblyInfo.cs
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\obj\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\obj\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.dll
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Data.Dapper\obj\Debug\netstandard2.0\BlazorCRUD.Data.Dapper.pdb

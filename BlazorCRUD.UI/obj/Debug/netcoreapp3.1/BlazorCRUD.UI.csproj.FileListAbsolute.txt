@@ -44,3 +44,9 @@ C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\Blazo
 C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\BlazorCRUD.UI.pdb
 C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\BlazorCRUD.UI.genruntimeconfig.cache
 C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\BlazorCRUD.UI.csproj.CopyComplete
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\bin\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.dll
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.dll
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\bin\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.pdb
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.pdb
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FilmDetails.razor.g.cs
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\Razor\Pages\FilmDetails.razor.g.cs

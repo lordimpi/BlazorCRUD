@@ -1,0 +1,9 @@
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\bin\Debug\netstandard2.0\BlazorCRUD.Model.deps.json
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\bin\Debug\netstandard2.0\BlazorCRUD.Model.dll
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\bin\Debug\netstandard2.0\BlazorCRUD.Model.pdb
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.csprojAssemblyReference.cache
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.AssemblyInfoInputs.cache
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.AssemblyInfo.cs
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.csproj.CoreCompileInputs.cache
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.dll
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.pdb

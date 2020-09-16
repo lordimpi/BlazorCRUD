@@ -76,6 +76,13 @@ using BlazorCRUD.UI.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\_Imports.razor"
+using Model;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
