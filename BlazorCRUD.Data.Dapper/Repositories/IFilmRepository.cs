@@ -6,7 +6,7 @@ namespace BlazorCRUD.Data.Dapper.Repositories
 {
     public interface IFilmRepository
     {
-        Task<IEnumerable<Film>> GetAllFilms(int id);
+        Task<IEnumerable<Film>> GetAllFilms();
         Task<Film> GetFilmDetails();
         Task<bool> InsertFilm(Film film);
         Task<bool> UpdateFilm(Film film);
