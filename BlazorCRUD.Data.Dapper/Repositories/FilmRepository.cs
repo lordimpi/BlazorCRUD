@@ -1,4 +1,5 @@
 ﻿using BlazorCRUD.Model;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -21,12 +22,12 @@ namespace BlazorCRUD.Data.Dapper.Repositories
             return new SqlConnection(ConnectionString);
         }
 
-        public Task<bool> DeleteFilm()
+        public Task<bool> DeleteFilm(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Film>> GetAllFilms()
+        public Task<IEnumerable<Film>> GetAllFilms(int id)
         {
             throw new NotImplementedException();
         }
@@ -36,12 +37,18 @@ namespace BlazorCRUD.Data.Dapper.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<bool> InsertFilm()
+        public async Task<bool> InsertFilm(Film film)
         {
-            throw new NotImplementedException();
+            var db = DbConnection();
+            var sql = @"
+                        INSERT INTO Films (Title, Director, ReleaseDate)
+                        VALUES (@Title, @Director, @ReleaseDate)";
+            var result = await db.ExecuteAsync(sql.ToString(),
+                new { film.Title, film.Director, film.ReleaseDate });
+            return result > 0;
         }
 
-        public Task<bool> UpdateFilm()
+        public Task<bool> UpdateFilm(Film film)
         {
             throw new NotImplementedException();
         }
