@@ -1,4 +1,5 @@
 ﻿@page "/filmdetails"
+@inject IFilmService FilmService  
 
 <h1>FilmDetails</h1>
 
@@ -18,7 +19,7 @@
         </tr>
         <tr>
             <td colspan="2" style="text-align:center">
-                @*<input type="submit" value="Save" @onclick="SaveFilm" />*@
+                <input type="submit" value="Save" @onclick="SaveFilm" />
                 <input type="button" value="Cancel" @onclick="CancelFilm" />
             </td>
         </tr>
@@ -34,8 +35,8 @@
 
     }
 
-    //protected async Task SaveFilm()
-    //{
-    //    await;
-    //}
+    protected async Task SaveFilm()
+    {
+        await FilmService.SaveFilm(film);
+    }
 }

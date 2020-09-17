@@ -10,7 +10,7 @@ namespace BlazorCRUD.Data.Dapper.Repositories
 {
     public class FilmRepository : IFilmRepository
     {
-        private string ConnectionString;
+        private readonly string ConnectionString;
 
         public FilmRepository(string connectionString)
         {

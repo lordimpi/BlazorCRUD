@@ -9,7 +9,7 @@ namespace BlazorCRUD.Data.Dapper.Repositories
         Task<IEnumerable<Film>> GetAllFilms(int id);
         Task<Film> GetFilmDetails();
         Task<bool> InsertFilm(Film film);
-        Task<bool> UpdateFilm(Film id);
+        Task<bool> UpdateFilm(Film film);
         Task<bool> DeleteFilm(int id);
     }
 }
