@@ -33,7 +33,7 @@ namespace BlazorCRUD.UI.Services
 
         public Task<Film> GetDetails(int id)
         {
-            throw new NotImplementedException();
+            return _filmRepository.GetFilmDetails(id);
         }
 
         public Task<bool> SaveFilm(Film film)

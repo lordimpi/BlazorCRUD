@@ -35,9 +35,12 @@ namespace BlazorCRUD.Data.Dapper.Repositories
             return await db.QueryAsync<Film>(sql.ToString(), new { });
         }
 
-        public Task<Film> GetFilmDetails()
+        public async Task<Film> GetFilmDetails(int id)
         {
-            throw new NotImplementedException();
+            var db = DbConnection();
+            var sql = @"SELECT * FROM dbo.Films WHERE Id = @id";
+
+            return await db.QueryFirstOrDefaultAsync<Film>(sql.ToString(), new { id });
         }
 
         public async Task<bool> InsertFilm(Film film)

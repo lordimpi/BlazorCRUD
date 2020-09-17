@@ -1,5 +1,6 @@
 ﻿@page "/filmdetails"
-@inject IFilmService FilmService  
+@page "/filmdetails/{id:int}"
+@inject IFilmService FilmService
 
 <h1>Film Details</h1>
 
@@ -28,6 +29,10 @@
 </EditForm>
 
 @code {
+
+    [Parameter]
+    public int id { get; set; }
+
     Film film = new Film();
 
     protected void CancelFilm()
@@ -38,5 +43,17 @@
     protected async Task SaveFilm()
     {
         await FilmService.SaveFilm(film);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (id == 0)
+        {
+            film.ReleaseDate = DateTime.Now;
+        }
+        else
+        {
+            film = await FilmService.GetDetails(id);
+        }
     }
 }
