@@ -1,6 +1,12 @@
 // Run this script in your favorite SGBD
 // For this example use SQLSERVER
 
+Modify appsettings.json
+
+"ConnectionStrings": {
+    "SqlConnection": "your string connection"
+    }
+
 CREATE DATABASE DBBlazor
 
 USE DBBlazor
