@@ -11,6 +11,8 @@ namespace BlazorCRUD.Data.Dapper.Repositories
     public class FilmRepository : IFilmRepository
     {
         private readonly string ConnectionString;
+        private SqlConnection Db;
+        private string sql;
 
         public FilmRepository(string connectionString)
         {
@@ -22,41 +24,53 @@ namespace BlazorCRUD.Data.Dapper.Repositories
             return new SqlConnection(ConnectionString);
         }
 
-        public Task<bool> DeleteFilm(int id)
+        private void ConnectionDb(string sql)
         {
-            throw new NotImplementedException();
+            Db = DbConnection();
+            this.sql = sql;
+        }
+
+        public async Task<bool> DeleteFilm(int id)
+        {
+            ConnectionDb(@"DELETE FROM Films WHERE Id = @id");
+
+            var result = await Db.ExecuteAsync(sql.ToString(), new {Id = id });
+
+            return result > 0;
         }
 
         public async Task<IEnumerable<Film>> GetAllFilms()
         {
-            var db = DbConnection();
-            var sql = @"SELECT * FROM dbo.Films";
+            ConnectionDb(@"SELECT * FROM dbo.Films");
 
-            return await db.QueryAsync<Film>(sql.ToString(), new { });
+            return await Db.QueryAsync<Film>(sql.ToString(), new { });
         }
 
         public async Task<Film> GetFilmDetails(int id)
         {
-            var db = DbConnection();
-            var sql = @"SELECT * FROM dbo.Films WHERE Id = @id";
+            ConnectionDb(@"SELECT * FROM dbo.Films WHERE Id = @id");
 
-            return await db.QueryFirstOrDefaultAsync<Film>(sql.ToString(), new { id });
+            return await Db.QueryFirstOrDefaultAsync<Film>(sql.ToString(), new { id });
         }
 
         public async Task<bool> InsertFilm(Film film)
         {
-            var db = DbConnection();
-            var sql = @"
-                        INSERT INTO Films (Title, Director, ReleaseDate)
-                        VALUES (@Title, @Director, @ReleaseDate)";
-            var result = await db.ExecuteAsync(sql.ToString(),
+            ConnectionDb(@"INSERT INTO Films (Title, Director, ReleaseDate)
+                        VALUES (@Title, @Director, @ReleaseDate)");
+            var result = await Db.ExecuteAsync(sql.ToString(),
                 new { film.Title, film.Director, film.ReleaseDate });
             return result > 0;
         }
 
-        public Task<bool> UpdateFilm(Film film)
+        public async Task<bool> UpdateFilm(Film film)
         {
-            throw new NotImplementedException();
+            ConnectionDb(@"UPDATE Films
+                        SET Title = @Title, Director = @Director, ReleaseDate = @ReleaseDate
+                        WHERE Id = @id");
+            var result = await Db.ExecuteAsync(sql.ToString(),
+                new { film.Title, film.Director, film.ReleaseDate , film.Id});
+
+            return result > 0;
         }
     }
 }

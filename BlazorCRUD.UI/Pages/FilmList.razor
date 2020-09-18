@@ -27,8 +27,8 @@ else
                 <td>@film.Title</td>
                 <td>@film.Director</td>
                 <td>@film.ReleaseDate</td>
-                <td><a href="/filmdetails/@film.Id"><i>Edit</i></a></td>
-                <td></td>
+                <td><a href="/filmdetails/@film.Id" class="btn btn-secondary"> Edit </a></td>
+                <td><a href="/filmdelete/@film.Id" class="btn btn-danger text-white">Delete</a></td>
             </tr>
             }
         </tbody>

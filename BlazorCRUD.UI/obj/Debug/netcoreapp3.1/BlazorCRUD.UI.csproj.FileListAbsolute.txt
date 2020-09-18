@@ -59,3 +59,5 @@ C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\bin\Debug\netcoreapp3.1\runti
 C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FilmList.razor.g.cs
 C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\Razor\Pages\FilmList.razor.g.cs
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FilmDelete.razor.g.cs
+C:\Users\snt-2\Desktop\S2\BlazorCRUD\BlazorCRUD.UI\obj\Debug\netcoreapp3.1\Razor\Pages\FilmDelete.razor.g.cs
